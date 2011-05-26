@@ -1,0 +1,28 @@
+!!!
+%html
+	%head
+		%title git
+		%link{ :href => "/style.css", :rel => "stylesheet", :type => "text/css"}
+	%body
+	#wrapper
+		%header#header.clearfix
+			%h1.left
+				%a{:href => "/"} git
+			%nav.right
+		%section#container= yield
+		%footer#footer.clearfix
+			%ul.left
+				%li Cocks and Oreos
+			%ul.right	
+				%li
+					%a{:href => "http://www.corgasm.org"} Corgasm
+				%li
+					%a{:href => "http://localhost:9292/"} Torrent
+				%li
+					%a{:href => "http://s.corgasm.org"} Short
+				%li
+					%a{:href => "http://dump.corgasm.org"} Dump
+				%li
+					%a{:href => "http://code.corgasm.org"} Code
+				%li
+					%a{:href => "http://git.corgasm.org"} Git

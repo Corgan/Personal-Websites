@@ -1,0 +1,9 @@
+- @results.each do |x|
+	.item
+		%img{:src => "/icons/small/#{x[:icon]}.jpg"}>/
+		%a{:rel => "item=#{x[:id]}", :href => "/?i=#{x[:id]}", :class => "q#{x[:qual]}"}>= "[#{x[:name]}]"
+		%a{:href => "/?c=#{x[:seller]}&r=#{x[:server]}"}= x[:seller]
+		%a{:href => "/?r=#{x[:server]}&f=#{x[:faction]}"}= x[:server]
+		%a{:href => "/?f=#{x[:faction]}"}= MyApp::FACTION[x[:faction]]
+		= MyApp::Money.new(x[:buyout])
+		= MyApp::Money.new(x[:bid])

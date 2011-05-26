@@ -1,0 +1,41 @@
+!!!
+%html
+	%head
+		%title login
+		%link{ :href => "/style.css", :rel => "stylesheet", :type => "text/css"}
+	%body
+	#wrapper
+		%header#header.clearfix
+			%h1.left
+				%a{:href => "/"} Derp
+			%nav.right
+				%ul
+					-if !logged_in?
+						%li
+							%a{:href => "/login"} Login
+						%li
+							%a{:href => "/create"} Register
+					-else
+						%li
+							%a{:href => "/api"} API Key
+						%li
+							%a{:href => "/regen"} New Key
+						%li
+							%a{:href => "/logout"} Logout
+		%section#container= yield
+		%footer#footer.clearfix
+			%ul.left
+				%li Cocks and Oreos
+			%ul.right	
+				%li
+					%a{:href => "http://www.corgasm.org"} Corgasm
+				%li
+					%a{:href => "http://localhost:9292/"} Torrent
+				%li
+					%a{:href => "http://s.corgasm.org"} Short
+				%li
+					%a{:href => "http://dump.corgasm.org"} Dump
+				%li
+					%a{:href => "http://code.corgasm.org"} Code
+				%li
+					%a{:href => "http://git.corgasm.org"} Git

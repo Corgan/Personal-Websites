@@ -1,0 +1,6 @@
+-@repos.each do |repo|
+	- name = (repo.path.split('/')[-1] == '.git' ? repo.path.split('/')[-2] : repo.path.split('/')[-1])
+	%div{:style => "float: left;"}
+		%a{:href => "/#{name}"}= name
+	%div{:style => "float: right;"}= repo.description
+	%div{:style => "clear: both;"}

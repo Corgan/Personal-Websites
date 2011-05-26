@@ -1,0 +1,33 @@
+!!!
+%html
+	%head
+		%title Torrents
+		%script{ :type => "text/javascript", :src => "/jquery.min.js"}
+		%script{ :type => "text/javascript", :src => "/jquery.timers-1.2.js"}
+		%script{ :type => "text/javascript", :src => "/jquery.tipTip.minified.js"}
+		%script{ :type => "text/javascript", :src => "/main.js"}
+		%link{ :href => "/style.css", :rel => "stylesheet", :type => "text/css"}
+		%link{ :href => "/tipTip.css", :rel => "stylesheet", :type => "text/css"}
+	%body
+	#wrapper
+		%header#header.clearfix
+			%h1.left
+				%a{:href => "/"} Torrents
+			%nav.right
+		%section#container= yield
+		%footer#footer.clearfix
+			%ul.left
+				%li Beep Boop
+			%ul.right	
+				%li
+					%a{:href => "http://www.corgasm.org"} WWW
+				%li
+					%a{:href => "http://localhost:9292/"} Torrent
+				%li
+					%a{:href => "http://s.corgasm.org"} Short
+				%li
+					%a{:href => "http://dump.corgasm.org"} Dump
+				%li
+					%a{:href => "http://code.corgasm.org"} Code
+				%li
+					%a{:href => "http://git.corgasm.org"} Git

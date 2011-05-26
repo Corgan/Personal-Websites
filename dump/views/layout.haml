@@ -1,0 +1,43 @@
+!!!
+%html
+	%head
+		%title Dump
+		%script{ :type => "text/javascript", :src => "/ZeroClipboard.js"}
+		%script{ :type => "text/javascript"} ZeroClipboard.setMoviePath('/ZeroClipboard.swf');
+		%link{ :href => "/style.css", :rel => "stylesheet", :type => "text/css"}
+	%body
+	#wrapper
+		%header#header.clearfix
+			%h1.left
+				%a{:href => "/"} Dump
+			%nav.right
+				%ul
+					-if !logged_in?
+						%li
+							%a{:href => "http://login.corgasm.org/login?ref=http://dump.corgasm.org"} Login
+						%li
+							%a{:href => "http://login.corgasm.org/create"} Register
+					-else
+						%li
+							%a{:href => "http://login.corgasm.org/api"} API Key
+						%li
+							%a{:href => "http://login.corgasm.org/regen"} New Key
+						%li
+							%a{:href => "http://login.corgasm.org/logout"} Logout
+		%section#container= yield :content
+		%footer#footer.clearfix
+			%ul.left
+				%li Cocks and Oreos
+			%ul.right	
+				%li
+					%a{:href => "http://www.corgasm.org"} Corgasm
+				%li
+					%a{:href => "http://localhost:9292/"} Torrent
+				%li
+					%a{:href => "http://s.corgasm.org"} Short
+				%li
+					%a{:href => "http://dump.corgasm.org"} Dump
+				%li
+					%a{:href => "http://code.corgasm.org"} Code
+				%li
+					%a{:href => "http://git.corgasm.org"} Git

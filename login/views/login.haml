@@ -1,0 +1,10 @@
+%form{ :action => "/login", :method => "post"}
+	%p
+		Name:
+		%input{ :name => "name", :type => "text", :size => "30"}
+	%p
+		Password:
+		%input{ :name => "password", :type => "password", :size => "30"}
+	%p
+		%input{ :name => "submit", :type => "submit", :value => "Submit"}
+		%input{ :name => "ref", :type => "hidden", :value => params[:ref]}

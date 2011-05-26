@@ -1,0 +1,19 @@
+%h1= (@torrent[:filename] ? @torrent[:filename] : @torrent[:t_hash])
+%div
+	%span= "Status: #{@torrent[:status]} - #{@torrent[:percent]}%"
+%div
+	%span ID: 
+	%a{:href => "/torrent/#{@torrent[:t_id]}"}
+		%span= "#{@torrent[:t_id]}"
+%div
+	%a{:href => "/torrent/#{@torrent[:t_id]}/delete"} Delete?
+%br
+
+- find(@torrent[:filename]).each do |x|
+	-a = x
+	%div= a.gsub("./data/", "")
+%br
+%br
+- if @x
+	- @x.class.const_get(:ATTRIBUTES).each do |x|
+		%div= @x.instance_eval { "#{x} => #{@attributes[x]}" }

@@ -1,0 +1,4 @@
+- @results.each do |x|
+	%div
+		%img{:src => "/icons/small/#{x[:icon]}.jpg"}>/
+		%a{:rel => "item=#{x[:id]}", :href => "/?i=#{x[:id]}", :class => "q#{x[:qual]}"}>= "[#{x[:name]}]"

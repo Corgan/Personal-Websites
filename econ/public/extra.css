@@ -1,0 +1,34 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#body {
+	min-height:100%;
+	position:relative;
+}
+
+#wrapper {
+	padding-bottom: 50px;
+}
+
+#container {
+	background: #666;
+}
+
+.debug {
+	position: absolute;
+	bottom:0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	overflow: auto;
+	background: #666;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}

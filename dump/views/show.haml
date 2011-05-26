@@ -1,0 +1,5 @@
+%div Click to copy url to clipboard
+%br/
+#url_container{ :style => "position:relative"}
+	%span{ :id => 'url', :class => "url" }= @url
+%script{ :type => "text/javascript" }= "var clip = new ZeroClipboard.Client(); clip.setText('#{@url}'); clip.glue('url', 'url_container');"

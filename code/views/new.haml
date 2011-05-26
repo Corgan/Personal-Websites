@@ -1,0 +1,6 @@
+.snippet
+	%h1 Paste a new code snippet below:
+	%form{:action => "/new", :method => "POST"}
+		%textarea{:name => "body", :id => "snippet_body", :rows => "40"}
+		%br/
+		%input{:type => "submit", :value => "Save"}/

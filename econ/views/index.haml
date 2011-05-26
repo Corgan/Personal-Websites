@@ -1,0 +1,6 @@
+- @results.each do |x|
+-	@links = []
+-	@links << "<a href='/?r=#{x[:server]}&f=0'>Alliance</a>" if x[:alliance]==1
+-	@links << "<a href='/?r=#{x[:server]}&f=1'>Horde</a>" if x[:horde]==1
+-	@links << "<a href='/?r=#{x[:server]}&f=2'>Neutral</a>" if x[:neutral]==1
+	%div= "#{x[:server]}: " + @links.join(" | ")

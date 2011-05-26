@@ -1,0 +1,234 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+a, b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+input, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+article, aside, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	content: none;
+}
+:focus, :active {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+input, select {
+	vertical-align: middle;
+}
+select {
+	margin: 0;
+}
+input::-moz-focus-inner { 
+	border: 0;
+	padding: 0;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.no_border {
+	border: 0 !important;
+}
+.no_bottom {
+	margin-bottom: 0 !important;
+}
+.no_left {
+	margin-left: 0 !important;
+}
+.no_right {
+	margin-right: 0 !important;
+}
+.no_top {
+	margin-top: 0 !important;
+}
+.reset {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.reset_all {
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.reset_margin {
+	margin: 0 !important;
+}
+.reset_padding {
+	padding: 0 !important;
+}
+.align_center {
+	text-align: center !important;
+}
+.align_justify {
+	text-align: justify !important;
+}
+.align_left {
+	text-align: left !important;
+}
+.align_right {
+	text-align: right !important;
+}
+.block {
+	display: block !important;
+}
+.hide {
+	display: none !important;
+}
+.inline {
+	display: inline !important;
+}
+.url {
+	color: black;
+}
+.hover {
+	color: red;
+}
+body {
+	background: #e6eaef;
+	color: #2c2c2c;
+	font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-size: 12px;
+}
+h2 {
+	border-bottom: 1px solid #e5e5e5;
+	font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+}
+a:link, a:visited {
+	color: #1c4fad;
+	text-decoration: none;
+	-webkit-transition: color .2s linear;
+}
+a:hover, a:active {
+	color: #c00;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 1px;
+	width: 100%;
+	border: 1px solid #ced2d8;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+th, td {
+	padding: 4px;
+	border: 1px solid #ced2d8;
+}
+#wrapper {
+	margin: 50px auto;
+	width: 850px;
+}
+#header {
+	margin: 0 0 14px 0;
+	padding: 0 15px;
+}
+#header h1 a {
+	color: #61656d;
+	display: inline-block;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 25px;
+	margin: 0 20px 0 0;
+	text-shadow: 0 1px 1px #fff;
+}
+#header nav ul li {
+	color: #a3a7ae;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	margin: 0 20px 0 0;
+	text-shadow: 0 1px 1px #fff;
+}
+#header nav ul li:last-child {
+	margin: 0;
+}
+#header nav ul li .disabled {
+	color: #c5c9ce;
+}
+#header nav ul li a:link, #header nav ul li a:visited {
+	color: #61656d;
+}
+#header nav ul li a:hover, #header nav ul li a:active {
+	color: #484b52;
+}
+#container {
+	background: #fff;
+	border: 1px solid #ced2d8;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	margin: 0 0 15px 0;
+	padding: 14px;
+}
+#footer {
+	padding: 0 15px;
+}
+#footer ul li {
+	color: #a3a7ae;
+	display: inline-block;
+	margin: 0 20px 0 0;
+	text-shadow: 0 1px 1px #fff;
+}
+#footer ul li.disabled {
+	color: #c5c9ce;
+}
+#footer ul li:last-child {
+	margin: 0;
+}
+#footer ul li a:link, #footer ul li a:visited {
+	color: #61656d;
+	font-weight: bold;
+}
+#footer ul li a:hover, #footer ul li a:active {
+	color: #484b52;
+}

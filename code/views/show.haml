@@ -1,0 +1,7 @@
+.snippet
+	.sbody#content
+		%pre
+			%code= display(@pastie.body)
+	.sdate= "Created on #{@pastie.created_at.strftime("%B %d, %Y at %I:%M %p")} "
+	%br/
+	%a{ :href => "/new"} Create new paste!

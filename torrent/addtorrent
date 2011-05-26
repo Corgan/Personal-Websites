@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'mechanize'
+
+agent = Mechanize.new {|agent| agent.user_agent = "Mac Safari"; agent.history.max_size = 0 }
+derp = agent.post('http://localhost:9292/add', { :file => File.new(ARGV.first) }).body
+puts derp

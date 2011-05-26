@@ -1,0 +1,4 @@
+-@commit.stats.to_diffstat.each do |diff|
+	%div
+		%a{ :href => "/#{@repo_name}/blob/#{@commit.id}/?f=#{diff.filename}" }="#{diff.filename}"
+		%span= ": +#{diff.additions} -#{diff.deletions}"

@@ -1,0 +1,4 @@
+-@commits.each do |commit|
+	%div{:style => "float: left;"}
+		%a{:href => "/#{@repo_name}/commit/#{commit.id}"}= commit.message
+	%div{:style => "clear: both;"}
